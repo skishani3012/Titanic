@@ -30,7 +30,7 @@ if page == "Home":
     
     col1, col2, col3 = st.columns([1, 6, 1])
     with col2:
-        st.image("titanic.jpg")
+        st.image("images/titanic.jpg")
 
 elif page == "Data Exploration":
     st.markdown("<h1 style='text-align: center;'>Data Exploration</h1>", unsafe_allow_html=True)
@@ -130,4 +130,4 @@ elif page == "Model Performance":
 
     col1, col2, col3 = st.columns([1, 6, 1])
     with col2:
-        st.image("confusion_matrix.png")
+        st.image("images/confusion_matrix.png")
