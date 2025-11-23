@@ -10,8 +10,8 @@ st.set_page_config(page_title="Titanic Survival Predictor", layout="wide", initi
 @st.cache_resource
 def load_resources():
     try:
-        model = joblib.load('titanic_model.pkl')
-        df = pd.read_csv('titanic.csv')
+        model = joblib.load('models/titanic_model.pkl')
+        df = pd.read_csv('data/titanic.csv')
         return model, df
     except FileNotFoundError:
         st.error("One or more required files (model.pkl or titanic.csv) are missing. Please ensure your project structure is correct and the model has been trained.")
